@@ -35,6 +35,13 @@
 	font-size: 14px;
 	line-height: 171%;
 }
+.inter-14-600 {
+	font-family: $font-secondary;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+}
 
 .inter-16-400 {
 	font-family: $font-secondary;
@@ -92,6 +99,11 @@ h2 {
 
 p {
 	@extend .inter-16-400;
+}
+
+.body-small {
+	@extend .inter-14-600;
+	color: $color-primary;
 }
 
 a {

@@ -1,0 +1,13 @@
+.table {
+	--bs-table-striped-bg: #fff !important;
+
+	th.body-small {
+		color: $color-primary
+	}
+
+	tbody {
+		th {
+			@extend .inter-14-400;
+		}
+	}
+}
