@@ -1,0 +1,97 @@
+
+// Import web safe fonts
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Font styles and sizes classes 
+.inter-14-400 {
+	font-family: $font-secondary;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+}
+
+.inter-16-400 {
+	font-family: $font-secondary;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.inter-18-600 {
+	font-family: $font-secondary;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 133%;
+}
+
+.poppins-40-600 {
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 120%;
+}
+
+.poppins-28-600 {
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 129%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: $color-black;
+}
+
+h1 {
+	@extend .poppins-40-600;
+}
+
+h2 {
+	@extend .poppins-28-600;
+}
+
+p {
+	@extend .inter-16-400;
+}
+
+a {
+	@extend .inter-18-600;
+	text-transform: capitalize;
+	color: $color-white;
+	transition: 0.3s color;
+	will-change: color;
+
+	@include hover {
+		color: $color-black;
+	}
+}
