@@ -7,9 +7,18 @@ html {
 }
 
 // Main sections wrapper
-.wrapper {
+.container {
 	margin: $common-value-0 auto;
 	width: $common-value-100;
 	height: $common-value-100;
 	max-width: $lg;
 }
+
+
+section {
+	padding: 30px 0;
+}
+// .container {
+// 	max-width: $lg;
+// 	background-color: orange;
+// }

@@ -13,3 +13,19 @@ input[type='submit'] {
 	padding: 0;
 	cursor: pointer;
 }
+
+.btn {
+	@extend .poppins-16-600;
+	@include border-radius(4px);
+	&--tertiary {
+		padding: 11px 32px;
+		border: 1px solid $color-grey-200;
+		color: $color-primary;
+
+		@include hover {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+}
+
