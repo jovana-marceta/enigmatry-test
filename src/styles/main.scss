@@ -9,7 +9,9 @@
 @import 'base/reset';
 
 @import 'components/buttons';
+@import 'components/hamburger-menu';
 
+@import 'layout/header';
 @import 'layout/navbar';
 @import 'layout/product';
 @import 'layout/product-info';
@@ -18,5 +20,3 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/services';
-
-

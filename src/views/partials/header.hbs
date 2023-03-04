@@ -37,7 +37,45 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{assets}}/img/favicons/apple-touch-icon-180x180.png">
   <link rel="apple-touch-icon" sizes="1024x1024" href="{{assets}}/img/favicons/apple-touch-icon-1024x1024.png">
 
-  {{!-- Importing FontAwesome 5 personal kit --}}
+  {{!-- Importing FontAwesome 6 personal kit --}}
   <script src="https://kit.fontawesome.com/cda5a90d6e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <header class="header bg-orange">
+      <div class="wrapper">
+        <div class="header__content d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center">
+            <a href="{{indexDir}}">
+              <img src="{{header.logo}}" alt="{{header.logo-alt}}" class="header__logo"> 
+            </a>
+
+
+            {{> navbar }}
+
+          
+            <div class="header__input-group input-group">
+              <input type="search" class="header__form-control form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+              <span class="header__group-    input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </div>
+          <div class="header__action-btns">
+            <a href="javascript:;" class="header__icon">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="javascript:;" class="header__icon">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="javascript:;" class="header__icon">
+              {{!-- I exported chart icon from Figma with svg sprite since it is pro icon --}}
+              <svg class="text-success" viewBox="0 0 314.009 314.009" style="width: 1em; height: 1em">
+                <use href="{{assets}}/img/svg-sprite/sprite.svg#shopping-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+

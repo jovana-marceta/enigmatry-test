@@ -7,16 +7,15 @@
 
 // Mixin for centering elements
 @mixin absolute-center() {
-	position:absolute;
-	left:50%;
+	position: $common-position-absolute;
+	left: 50%;
 	top: 50%;
-	transform:translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 // Mixin for pseudo elements
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($pos: absolute, $content: ''){
     content: $content;
-    display: $display;
     position: $pos;
 }
 

@@ -1,0 +1,28 @@
+.nav__item {
+	position: relative;
+	display: inline-block;
+	padding: 40px 40px 45px;
+
+
+	@include hover {
+		a {
+			color: $color-black;
+		}
+
+		&::after {
+			@include pseudo;
+			height: 5px;
+			width: 97px;
+			background-color: $black;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	@include for-medium-screen {
+		display: none;
+	}
+
+}
+

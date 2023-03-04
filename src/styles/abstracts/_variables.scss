@@ -1,8 +1,12 @@
 // Common values
 $common-value-0: 0;
 $common-value-100: 100%;
+$common-value-center: center;
+$common-value-unset: unset;
 $common-display-flex: flex;
 $common-display-block: block;
+$common-position-relative: relative;
+$common-position-absolute: absolute;
 $common-fw-600: 600;
 $common-fw-400: 400;
 
@@ -17,8 +21,16 @@ $color-primary: #FE5E41;
 $color-secondary: #F2F2F2; 
 $color-tertiary: #00A878; 
 
+$color-grey-100: #F2F2F2;
+
+$site-colors: (
+	"black": $color-black,
+	"white": $color-white,
+	"orange": $color-primary,
+) !default;
+
 //------- Screen Resolutions
 $sm: 540px;
 $md: 768px;
-$lg: 960px;
+$lg: 1106px;
 $xl: 1170px;

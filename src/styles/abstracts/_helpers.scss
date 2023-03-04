@@ -1,9 +1,22 @@
+@import 'variables';
+
 %bg-image {
-	width: 100%;
-	background-position: center center;
+	background-position: $common-value-center $common-value-center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
-	left: 0;
-	top: 0;
+	width: $common-value-100;
+	height: $common-value-100;
+	left: $common-value-0;
+	top: $common-value-0;
+}
+
+@each $colors-name in $site-colors {
+	$name: nth($colors-name, 1);
+	$color: nth($colors-name, 2);
+	.bg-#{$name} {
+		background-color: $color;
+	}
+	.color-#{$name} {
+		color: $color;
+	}
 }

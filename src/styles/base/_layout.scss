@@ -1,3 +1,11 @@
+
+html {
+	background-color: $color-white;
+	color: $color-black;
+	font-family: $font-secondary;
+	font-size: 14px;
+}
+
 // Main sections wrapper
 .wrapper {
 	margin: $common-value-0 auto;
