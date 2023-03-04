@@ -1,0 +1,43 @@
+// Mixin for hover
+@mixin hover {
+	&:hover {
+		@content;
+	}	
+}
+
+// Mixin for centering elements
+@mixin absolute-center() {
+	position:absolute;
+	left:50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+}
+
+// Mixin for pseudo elements
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// Mixin for border radius
+@mixin border-radius($pixel) {
+	border-radius: $pixel;
+}
+
+// Mixins for media queries
+@mixin for-small-screen {
+	@media (max-width: $sm) { @content; }
+}
+
+@mixin for-medium-screen{
+	@media (max-width: $md) { @content; }
+}
+
+@mixin for-large-screen {
+	@media (max-width: $lg) { @content; }
+}
+
+@mixin for-extra-large-screen {
+	@media (max-width: $xl) { @content; }
+}
