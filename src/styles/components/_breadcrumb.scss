@@ -3,4 +3,23 @@
 		@extend .inter-13-400;
 		color: $color-black;
 	}
+
+	// overriding bootstrap default content and padding
+
+	&::after,
+	&+.breadcrumb-item::after {
+		content: '\f054';
+		font: var(--fa-font-solid);
+		font-size: 12px;
+		color: $color-black;
+		padding-left: 14px;
+	}
+	&::before,
+	&+.breadcrumb-item::before {
+		display: none;
+	}
+	
+	.breadcrumb-item + .breadcrumb-item {
+		padding-left: 13px;
+	}
 }

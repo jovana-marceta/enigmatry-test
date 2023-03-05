@@ -1,28 +1,44 @@
-<section class="product bg-orange">
+<section class="product bg-white">
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				{{> breadcrumb }}
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm">
-				<h1>Product name lorem ipsum</h1>
+		<div class="row mb-36">
+			<div class="col-lg-7 col-sm-12">
+				<div class="product__title">
+					<h1>Product name lorem ipsum</h1>
+				</div>
 			</div> 
-			<div class="col-sm">
-				<p>Symbols</p>
+			<div class="col-lg-5">
+				<div class="product__actions-group d-flex justify-content-end align-items-center">
+					<a href="javascript;" class="product__action">
+						<i class="fa-solid fa-arrow-left color-black"></i>
+					</a>
+					<a href="javascript;" class="product__action">
+						<i class="fa-solid fa-arrow-right color-black"></i>
+					</a>
+					<a href="javascript;" class="product__action">
+						<i class="fa-regular fa-heart color-black"></i>
+					</a>
+					<a href="javascript:;" class="product__action">
+						<svg class="text-success" viewBox="0 0 314.009 314.009" style="width: 1em; height: 1em">
+							<use href="{{assets}}/img/svg-sprite/sprite.svg#share-nodes"></use>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-7">
-				<p>hello</p>
 				<img src="{{product.img2}}" alt="#">
 			</div>
 			<div class="col-sm-5">
 				<div class="product__card card bg-grey">
 					<div class="product__card-body card-body">
 						<h3 class="product__card-title card-title">{{{product.title1}}}</h3>
-						<p class="card-text mb-25">{{product.text2}}</p>
+						<p aria-label="paragraph" class="card-text mb-26">{{product.text2}}</p>
 						<div class="row">
 							<div class="col-sm-6">
 								<select class="form-select mb-3" aria-label=".form-select-lg example">

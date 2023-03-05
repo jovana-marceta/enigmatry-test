@@ -1,4 +1,6 @@
 .product {
+	padding: 40px 0 62px;
+
 	&__card {
 		padding: 24px 34px 66px;
 		border: 0;
@@ -14,6 +16,32 @@
 		margin-bottom: 13px;
 	}
 
+
+	.product__action {
+		display: inline-block;
+
+		&:not(:first-child) {
+			padding-left: 20px;
+		}
+
+		
+		i {
+			@include hover {
+				color: $color-white;
+
+			}
+		}
+		
+
+		// i {
+		// 	color: ;
+		// }
+	}
+
+
+	.product__actions-group {
+		height: 100%;
+	}
 	.form-check-input:checked {
 		background-color: $color-tertiary;
 	}
