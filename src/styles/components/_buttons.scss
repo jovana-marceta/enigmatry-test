@@ -42,6 +42,7 @@ input[type='submit'] {
 			border: 1px solid transparent;
 		}
 	}
+
 	&--tertiary {
 		border: 1px solid $color-grey-200;
 		color: $color-primary;
@@ -50,6 +51,22 @@ input[type='submit'] {
 			background-color: $color-primary;
 			color: $color-white;
 		}
+	}
+	
+	&--quaternary {
+		background-color: $color-primary;
+		color: $color-white;
+
+		@include hover {
+			border: 1px solid $color-grey-200;
+			color: $color-primary;
+		}
+
+	}
+
+	&--no-border {
+		border: none;
+		color: $color-primary;
 	}
 }
 

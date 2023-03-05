@@ -78,6 +78,10 @@
 		border-bottom-right-radius: unset;
 		border: 0;
 		border-bottom: 1px solid $color-grey-200;
+
+		&:focus {
+			box-shadow: unset;
+		}
 	}
 }
 

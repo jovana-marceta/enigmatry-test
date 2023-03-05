@@ -85,6 +85,13 @@
 	line-height: 150%;
 }
 
+.poppins-24-600 {
+	@extend %poppins;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32PX;
+}
+
 .poppins-40-600 {
 	@extend %poppins;
 	font-weight: 600;
@@ -120,6 +127,9 @@ h3 {
 	@extend .inter-16-600;
 }
 
+h4 {
+	@extend .poppins-24-600;
+}
 p {
 	@extend .inter-16-400;
 

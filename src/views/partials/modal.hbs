@@ -1,13 +1,34 @@
 <div class="modal | js-modal"> 
-							<div class="modal-bg | js-modal-bg"></div>
-							<div class="modal-inner bg-white | js-modal-inner">
-								<div class="modal-content">
-							
-									<button class="modal-button js-modal-button">
-										<svg viewBox="0 0 314.009 314.009" style="width: 18px; height: 18px">
-											<use href="{{assets}}/img/svg-sprite/sprite.svg#close"></use>
-										</svg>
-									</button>
-								</div>
+	<div class="modal-bg | js-modal-bg"></div>
+	<div class="modal-inner bg-white | js-modal-inner">
+		<div class="modal-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="modal-button js-modal-button">
+							<svg viewBox="0 0 314.009 314.009" style="width: 18px; height: 18px">
+								<use href="{{assets}}/img/svg-sprite/sprite.svg#close"></use>
+							</svg>
+						</button>
+						<h4 class="modal__title mb-16">{{modal.title}}</h4>
+						<p class="mb-25">{{modal.text}}</p>
+						<form action="#" class="modal__form">
+							<div class="mb-3">
+								<input type="email" class="modal__form-control form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
 							</div>
-						</div>
+							<div class="mb-3">
+								<textarea class="modal__form-control form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Your message"></textarea>
+							</div>
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn btn-lg btn--no-border me-2">Cancel</button>
+								<button type="button" class="btn btn-lg btn--quaternary">Send message</button>
+							</div>
+						</form>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
