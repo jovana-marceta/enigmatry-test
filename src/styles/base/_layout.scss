@@ -11,4 +11,8 @@ html {
 	width: $common-value-100;
 	height: $common-value-100;
 	max-width: $lg;
+
+	@include for-small-screen() {
+		padding: 0 24px;
+	}
 }
