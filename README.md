@@ -1,11 +1,5 @@
 ## Enigmatry Test
 
-<table>
-	<tr>
-		<td align="center"><a href="https://github.com/jovana-marceta"><img src="https://avatars.githubusercontent.com/u/69209749?v=4" width="100px;" alt=""/><br /><sub><b>Jovana Marčeta</b></sub></a><br /><a href="https://www.linkedin.com/in/jovanamarceta/" title="Linkedin">💬</a> <a href="https://jovana-marceta.github.io/app/index.html" title="Portfolio">🌏</a></td>
-	</tr>
-</table>
-
 :rocket: Gulp 4 + Webpack 5 + Handlebars + Babel + BrowserSync :fire:
 
 ## Documentation
@@ -21,11 +15,13 @@
 
 ## Getting Started
 
-### Install
+### Install & Run
 
 1. Install **NodeJS** and **npm**
 2. Clone this repository
-3. Run `npm install`
+3. Run `npm install` to get node dependencies
+4. For compiling dev build and start the server run `npm run dev` or install Gulp globally and type `gulp`
+5. For production run `npm run build` or `gulp build --production`
 
 ```bash
 git clone https://github.com/jovana-marceta/enigmatry-test.git
@@ -159,4 +155,10 @@ In this case, the image does not respond to color changes.
       - `pages` - all pages
 
 **[⬆ back to menu](#documentation)** 
+
+<table>
+	<tr>
+		<td align="center"><a href="https://github.com/jovana-marceta"><img src="https://avatars.githubusercontent.com/u/69209749?v=4" width="100px;" alt=""/><br /><sub><b>Jovana Marčeta</b></sub></a><br /><a href="https://www.linkedin.com/in/jovanamarceta/" title="Linkedin">💬</a> <a href="https://jovana-marceta.github.io/app/index.html" title="Portfolio">🌏</a></td>
+	</tr>
+</table>
 
