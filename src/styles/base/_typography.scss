@@ -28,64 +28,72 @@
 }
 
 // Font styles and sizes classes 
-.inter-14-400 {
+
+%inter {
 	font-family: $font-secondary;
 	font-style: normal;
+}
+%poppins {
+	font-family: $font-primary;
+	font-style: normal;
+}
+
+.inter-13-400 {
+	@extend %inter;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.inter-14-400 {
+	@extend %inter;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 171%;
 }
 .inter-14-600 {
-	font-family: $font-secondary;
-	font-style: normal;
+	@extend %inter;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 24px;
 }
 
 .inter-16-400 {
-	font-family: $font-secondary;
-	font-style: normal;
+	@extend %inter;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
 }
 .inter-16-600 {
-	font-family: $font-secondary;
-	font-style: normal;
+	@extend %inter;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
 }
 
 .inter-18-600 {
-	font-family: $font-secondary;
-	font-style: normal;
+	@extend %inter;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 133%;
 }
 
-
 .poppins-16-600 {
-	font-family: $font-primary;
-	font-style: normal;
+	@extend %poppins;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 150%;
 }
 
 .poppins-40-600 {
-	font-family: $font-primary;
-	font-style: normal;
+	@extend %poppins;
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 120%;
 }
 
 .poppins-28-600 {
-	font-family: $font-primary;
-	font-style: normal;
+	@extend %poppins;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 129%;
