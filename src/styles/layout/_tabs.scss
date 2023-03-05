@@ -3,18 +3,26 @@
 		@extend .inter-16-600;
 		cursor: pointer;
 		padding-bottom: 20px;
+		padding: 0 20px 30px;
 	
 		&.active-tab {
 			color: $color-primary;
 			transition: color 0.3s, background-color 0.3s;
 			will-change: color, background-color;
+			border-bottom: 3px solid $color-primary;
 		}
-	
-		&:not(:last-of-type) {
-			padding-right: 32px;
+
+		@include for-small-screen() {
+			padding: 0 10px 20px;
 		}
 	}
 	
+	.tab-content .tab__item .container {
+		@include for-small-screen() {
+			padding: 0 
+		}
+		
+	}
 	[data-tab-content] {
 		display: $common-value-none;
 	}

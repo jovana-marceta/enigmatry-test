@@ -17,7 +17,7 @@
 
 ### Install & Run
 
-1. Install **NodeJS** and **npm**
+1. Install **NodeJS**, **npm** and **Gulp** (node used in this project is 16.13.1)
 2. Clone this repository
 3. Run `npm install` to get node dependencies
 4. For compiling dev build and start the server run `npm run dev` or install Gulp globally and type `gulp`

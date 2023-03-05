@@ -2,6 +2,8 @@
 	"title1": "In stock <span class=\"text-important\"> - only 2 left</span>",
 	"text2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 	"img2": "assets/img/content/bike.jpg",
+
+	"img3":  "assets/img/content/bike2.jpg",
 	
 	"btnText1": "Add to cart",
 	"btnText2": "Contact us",
