@@ -17,7 +17,7 @@ input[type='submit'] {
 .btn {
 	@extend .poppins-16-600;
 	@include border-radius(4px);
-	padding: 11px 32px;
+	padding: 11px 25px;
 
 	&--primary {
 		background-color: $color-tertiary;
@@ -37,7 +37,7 @@ input[type='submit'] {
 		color: $color-tertiary;
 
 		@include hover {
-			background-color: $color-tertiary;
+			background-color: $color-primary;
 			color: $color-white;
 			border: 1px solid transparent;
 		}

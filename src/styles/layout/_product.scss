@@ -2,7 +2,7 @@
 	padding: 40px 0 62px;
 
 	&__card {
-		padding: 24px 34px 66px;
+		padding: 24px 34px 40px;
 		border: 0;
 	} 
 	&__card-body {
@@ -24,24 +24,17 @@
 			padding-left: 20px;
 		}
 
-		
 		i {
 			@include hover {
-				color: $color-white;
-
+				color: $color-primary;
 			}
 		}
-		
-
-		// i {
-		// 	color: ;
-		// }
 	}
-
 
 	.product__actions-group {
 		height: 100%;
 	}
+	
 	.form-check-input:checked {
 		background-color: $color-tertiary;
 	}
@@ -60,5 +53,14 @@
 			box-shadow: unset;
 			border-color: $color-tertiary;
 		}
+	}
+
+	.product__form-select {
+		@include border-radius(4px);
+		@extend .inter-14-400;
+		border-bottom-left-radius: unset;
+		border-bottom-right-radius: unset;
+		border: 0;
+		border-bottom: 1px solid $color-grey-200;
 	}
 }

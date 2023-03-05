@@ -2,6 +2,10 @@
 	a {
 		@extend .inter-13-400;
 		color: $color-black;
+
+		@include hover {
+			color: $color-primary;
+		}
 	}
 
 	// overriding bootstrap default content and padding

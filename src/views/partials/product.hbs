@@ -13,16 +13,16 @@
 			</div> 
 			<div class="col-lg-5">
 				<div class="product__actions-group d-flex justify-content-end align-items-center">
-					<a href="javascript;" class="product__action">
+					<a href="#" class="product__action">
 						<i class="fa-solid fa-arrow-left color-black"></i>
 					</a>
-					<a href="javascript;" class="product__action">
+					<a href="#" class="product__action">
 						<i class="fa-solid fa-arrow-right color-black"></i>
 					</a>
-					<a href="javascript;" class="product__action">
+					<a href="#" class="product__action">
 						<i class="fa-regular fa-heart color-black"></i>
 					</a>
-					<a href="javascript:;" class="product__action">
+					<a href="#" class="product__action">
 						<svg class="text-success" viewBox="0 0 314.009 314.009" style="width: 1em; height: 1em">
 							<use href="{{assets}}/img/svg-sprite/sprite.svg#share-nodes"></use>
 						</svg>
@@ -38,39 +38,59 @@
 				<div class="product__card card bg-grey">
 					<div class="product__card-body card-body">
 						<h3 class="product__card-title card-title">{{{product.title1}}}</h3>
-						<p aria-label="paragraph" class="card-text mb-26">{{product.text2}}</p>
-						<div class="row">
-							<div class="col-sm-6">
-								<select class="form-select mb-3" aria-label=".form-select-lg example">
-									<option selected>Open this select menu</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+						<p aria-label="paragraph" class="card-text mb-25">{{product.text2}}</p>
+						<div class="product__form-floating mb-20">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-floating">
+										<select class="product__form-select form-select" id="floatingSelect" aria-label="Floating label select example">
+											<option selected>Gents - Medium </option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+										<label for="floatingSelect">Model</label>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-floating">
+										<select class="product__form-select form-select" id="floatingSelect" aria-label="Floating label select example">
+											<option selected>Black</option>
+											<option value="1">Black</option>
+											<option value="2">Orange</option>
+											<option value="3">Pink</option>
+										</select>
+										<label for="floatingSelect">Color</label>
+									</div>
+								</div>
 							</div>
-							<div class="col-sm-6">
-								<select class="form-select mb-3" aria-label=".form-select-lg example">
-									<option selected>Open this select menu</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+						</div>
+						<div class="product__form-checks mb-10">
+							<div class="row">
+								<div class="col">
+									<div class="product__form-check form-check">
+										<input class="product__form-check-input form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label" for="flexCheckDefault">
+											Add option lorem ipsum
+										</label>
+									</div>
+									<div class="product__form-check form-check">
+										<input class="product__form-check-input form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+										<label class="form-check-label" for="flexCheckChecked">
+											Add option autpat velit cano totam rem aperiam
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="product__form-check form-check">
-							<input class="product__form-check-input form-check-input" type="checkbox" value="" id="flexCheckDefault">
-							<label class="form-check-label" for="flexCheckDefault">
-								Default checkbox
-							</label>
+						<div class="mb-25">
+							<div class="row">
+								<div class="col-lg-12">
+									<button type="button" class="btn btn-lg btn--primary js-button">{{product.btnText1}}</button>
+									<button type="button" class="btn btn-lg btn--secondary js-button">{{product.btnText2}}</button>
+								</div>
+							</div>
 						</div>
-						<div class="product__form-check form-check">
-							<input class="product__form-check-input form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-							<label class="form-check-label" for="flexCheckChecked">
-								Checked checkbox
-							</label>
-						</div>
-						<button type="button" class="btn btn-lg btn--primary js-button">{{product.btnText1}}</button>
-						<button type="button" class="btn btn-lg btn--secondary js-button">{{product.btnText2}}</button>
 
 						{{> modal }}
 						
