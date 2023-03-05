@@ -1,42 +1,33 @@
 .header {
-	
-	&__action-btns:last-child {
-		padding-right: 0;
-	}
-	
-	&__icon {
-		display: inline-block;
-		padding: 0 10px;
-	}
-	&__logo {
-		
-		max-width: 140px;
-	}
-	
-	&__group-text {
-		border-radius: $common-value-unset;
-		border-top-right-radius: 4px;
-		background-color: $color-grey-100;
-	
-		i {
-			cursor: pointer;
+	.navbar {
+		padding: 37px 0;
+		@include for-small-screen() {
+			padding: 20px 0;
 		}
 	}
 
-	&__input-group {
-		min-height: 56px;
-		min-width: 256px;
+	.nav-link {
+		@extend .inter-18-600;
+		display: inline-block;
+		color: $color-white;
+		margin: 0 15px 0 15px;
+	}
+	
+	.header__icon {
+		padding: 0 20px;
 	}
 
-	&__form-control {
-		border-radius: $common-value-unset;
-		border: 0;
-		border-top-left-radius: 4px;
-		background-color: $color-grey-100;
-	
+	.navbar-toggler {
+		border: unset;
+
 		&:focus {
-			background-color: $color-grey-100;
-			box-shadow: $common-value-unset;
+			box-shadow: unset;
+		}
+	}
+
+	.navbar-collapse {
+		@include for-small-screen() {
+			text-align: center;
 		}
 	}
 }
