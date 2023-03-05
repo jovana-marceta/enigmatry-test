@@ -14,12 +14,58 @@
 				<img src="{{product.img2}}" alt="#">
 			</div>
 			<div class="col-sm-6">
-				<div class="card">
-					<div class="card-body">
-						<h3 class="card-title">Card title</h3>
-						<p class="card-text">Jovanica</p>
-						<a href="" class="btn">Joxy</a>
-					</div>
+				<div class="product__card card bg-grey">
+					<div class="product__card-body card-body">
+						<h3 class="product__card-title card-title">{{{product.title1}}}</h3>
+						<p class="card-text mb-25">{{product.text2}}</p>
+						<div class="row">
+							<div class="col-sm-6">
+								<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+									<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="col-sm-6">
+								<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+									<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="product__form-check form-check">
+							<input class="product__form-check-input form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Default checkbox
+							</label>
+						</div>
+						<div class="product__form-check form-check">
+							<input class="product__form-check-input form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							<label class="form-check-label" for="flexCheckChecked">
+								Checked checkbox
+							</label>
+						</div>
+						<button type="button" class="btn btn-lg btn--primary js-button">{{product.btnText1}}</button>
+						<button type="button" class="btn btn-lg btn--secondary js-button">{{product.btnText2}}</button>
+
+						<div class="modal | js-modal"> 
+							<div class="modal-bg | js-modal-bg"></div>
+							<div class="modal-inner bg-white | js-modal-inner">
+								<div class="modal-content">
+							
+									<button class="modal-button js-modal-button">
+										<svg viewBox="0 0 314.009 314.009" style="width: 18px; height: 18px">
+											<use href="{{assets}}/img/svg-sprite/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						
+						
 				</div>
 			</div>
 		</div>

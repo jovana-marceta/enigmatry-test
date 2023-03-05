@@ -8,4 +8,10 @@ import device from 'current-device';
 
 import './app.js';
 
+import './app.js';
+import './modal.js';
+
 require('./nav');
+require('./modal');
+
+

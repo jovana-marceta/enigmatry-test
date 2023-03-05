@@ -50,6 +50,13 @@
 	font-size: 16px;
 	line-height: 150%;
 }
+.inter-16-600 {
+	font-family: $font-secondary;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
 
 .inter-18-600 {
 	font-family: $font-secondary;
@@ -67,7 +74,6 @@
 	font-size: 16px;
 	line-height: 150%;
 }
-
 
 .poppins-40-600 {
 	font-family: $font-primary;
@@ -97,6 +103,10 @@ h2 {
 	@extend .poppins-28-600;
 }
 
+h3 {
+	@extend .inter-16-600;
+}
+
 p {
 	@extend .inter-16-400;
 }
@@ -116,4 +126,8 @@ a {
 	@include hover {
 		color: $color-black;
 	}
+}
+
+.text-important {
+	color: $color-primary;
 }

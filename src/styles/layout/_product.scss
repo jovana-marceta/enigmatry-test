@@ -1,0 +1,35 @@
+.product {
+	&__card {
+		padding: 24px 34px 66px;
+	} 
+	&__card-body {
+		padding: 0;
+	}
+	&__card-title {
+		margin-bottom: 13px;
+	}
+
+	&__form-check {
+		margin-bottom: 13px;
+	}
+
+	.form-check-input:checked {
+		background-color: $color-tertiary;
+	}
+
+	&__form-check-input {
+		width: 20px;
+		height: 20px;
+		border: 2px solid $color-grey-300;
+		background-color: transparent;
+
+		&:checked {
+			border-color: $color-grey-300;
+		}
+
+		&:focus {
+			box-shadow: unset;
+			border-color: $color-tertiary;
+		}
+	}
+}

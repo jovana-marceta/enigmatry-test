@@ -17,8 +17,32 @@ input[type='submit'] {
 .btn {
 	@extend .poppins-16-600;
 	@include border-radius(4px);
+	padding: 11px 32px;
+
+	&--primary {
+		background-color: $color-tertiary;
+		color: $color-white;
+		border: 1px solid transparent;
+
+		@include hover {
+			background-color: $color-white;
+			border: 1px solid $color-grey-200;
+			color: $color-tertiary;
+		}
+	}
+
+	&--secondary {
+		border: 1px solid $color-grey-200;
+		background-color: $color-white;
+		color: $color-tertiary;
+
+		@include hover {
+			background-color: $color-tertiary;
+			color: $color-white;
+			border: 1px solid transparent;
+		}
+	}
 	&--tertiary {
-		padding: 11px 32px;
 		border: 1px solid $color-grey-200;
 		color: $color-primary;
 
