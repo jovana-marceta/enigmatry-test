@@ -20,7 +20,7 @@
 	}
 	&::before,
 	&+.breadcrumb-item::before {
-		display: none;
+		display: $common-value-none;
 	}
 	
 	.breadcrumb-item + .breadcrumb-item {

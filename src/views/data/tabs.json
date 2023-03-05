@@ -1,0 +1,19 @@
+{
+	"title1": "Product description",
+	"img1": "assets/img/content/product.png",
+	"text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+	"alt1": "Descriptions image",
+	"btnText1": "More info",
+
+	"title2": "Specifications",
+	"img2": "assets/img/content/tab-2.jpg",
+	"text2": "Integer finibus, orci non sodales scelerisque, magna mi imperdiet sem, id tincidunt nulla ante et risus. Nulla id nulla dolor. Cras quis enim imperdiet, tempor metus vel, dignissim libero. Fusce pellentesque bibendum hendrerit. Donec feugiat justo felis, et gravida augue auctor id. Sed mollis venenatis massa eget venenatis. Maecenas eget iaculis ipsum. Aenean quis nisi ut lacus porttitor mattis non id erat. Duis augue ex, viverra ut commodo et, egestas non leo.",
+	"alt2": "Specifications image",
+	"btnText2": "More info",
+
+	"title3": "Reviews",
+	"img3": "assets/img/content/tab-3.jpg",
+	"text3": "Nam eget sapien sit amet dolor sagittis rhoncus. Nunc pellentesque dapibus est, non maximus risus varius ac. Duis molestie turpis in mauris venenatis, sed cursus nulla tempor. Praesent porttitor massa pretium eros efficitur, vel venenatis est varius. Duis sed risus sit amet lacus ultrices aliquet. Nulla sapien ex, condimentum sed sem ac, lobortis tincidunt turpis. Aenean eget mauris congue, iaculis lectus non, ultricies sem. Curabitur a urna id metus vehicula auctor. Donec quis cursus tellus, euismod blandit ligula. Cras aliquam accumsan mauris eu posuere. Sed convallis, diam non volutpat efficitur, ipsum arcu blandit tellus, sed pulvinar nisl risus id turpis. Nulla eu ligula at nisi gravida hendrerit. Vivamus scelerisque ac metus nec posuere. Proin quis dolor vel nulla hendrerit congue. Sed in pellentesque orci.",
+	"alt3": "Reviews image",
+	"btnText3": "More info"
+}

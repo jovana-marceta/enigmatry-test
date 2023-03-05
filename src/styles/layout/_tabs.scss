@@ -1,0 +1,29 @@
+.tabs {
+	.tab {
+		@extend .inter-16-600;
+		cursor: pointer;
+		padding-bottom: 20px;
+	
+		&.active-tab {
+			color: $color-primary;
+			transition: color 0.3s, background-color 0.3s;
+			will-change: color, background-color;
+		}
+	
+		&:not(:last-of-type) {
+			padding-right: 32px;
+		}
+	}
+	
+	[data-tab-content] {
+		display: $common-value-none;
+	}
+	
+	.active-tab[data-tab-content] {
+		display: block;
+	}
+	hr {
+		margin: 0 0 60px;
+	}
+}
+

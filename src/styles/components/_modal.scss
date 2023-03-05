@@ -19,7 +19,7 @@
 }
 
 .modal.modal-active .modal-inner  {
-	transform: none;
+	transform: $common-value-none;
 }
 
 .modal-inner {

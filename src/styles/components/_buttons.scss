@@ -1,14 +1,14 @@
 a,
 button {
-	appearance: none;
-	outline: none;
+	appearance: $common-value-none;
+	outline: $common-value-none;
 }
 
 button,
 input[type='button'],
 input[type='submit'] {
-	background: none;
-	outline: none;
+	background: $common-value-none;
+	outline: $common-value-none;
 	border: 0;
 	padding: 0;
 	cursor: pointer;

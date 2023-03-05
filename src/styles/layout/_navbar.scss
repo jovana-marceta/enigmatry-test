@@ -21,7 +21,7 @@
 	}
 
 	@include for-medium-screen {
-		display: none;
+		display: $common-value-none;
 	}
 
 }
