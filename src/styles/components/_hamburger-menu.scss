@@ -6,7 +6,7 @@
 		display: block;
 
 		&.active .bar:nth-child(2) {
-			opacity: 0;
+			opacity: $common-value-0;
 		}
 		
 		&.active .bar:nth-child(1) {

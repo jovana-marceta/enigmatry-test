@@ -1,7 +1,7 @@
 .product {
 	padding: 40px 0 62px;
 
-	&__card {
+	.product__card {
 		padding: 24px 34px 40px;
 		border: 0;
 
@@ -11,14 +11,16 @@
 
 		@include border-radius(0);
 	} 
-	&__card-body {
+
+	.product__card-body {
 		padding: 0;
 	}
-	&__card-title {
+
+	.product__card-title {
 		margin-bottom: 13px;
 	}
 
-	&__form-check {
+	.product__form-check {
 		margin-bottom: 13px;
 	}
 
@@ -26,36 +28,7 @@
 		margin-right: 0;
 	}
 
-	.btn {
-		@include for-small-screen() {
-			padding: 11px 14px;
-		}
-	}
-
-
-	.product__action {
-		display: inline-block;
-
-		&:not(:first-child) {
-			padding-left: 20px;
-		}
-
-		i {
-			@include hover {
-				color: $color-primary;
-			}
-		}
-	}
-
-	.product__actions-group {
-		height: 100%;
-	}
-	
-	.form-check-input:checked {
-		background-color: $color-tertiary;
-	}
-
-	&__form-check-input {
+	.product__form-check-input {
 		width: 20px;
 		height: 20px;
 		border: 2px solid $color-grey-300;
@@ -83,34 +56,33 @@
 			box-shadow: unset;
 		}
 	}
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-	position: relative;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: $color-grey-100;
-}
+	.product__action {
+		display: inline-block;
 
-.carousel-control-prev-icon {
-	&::before {
-		content: '\f053';
-		font: var(--fa-font-solid);
-		@include absolute-center();
-		font-size: 24px;
-		color: $color-black;
-		position: absolute;
+		&:not(:first-child) {
+			padding-left: 20px;
+		}
+
+		i {
+			@include hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	.product__actions-group {
+		height: 100%;
+	}
+	
+	.form-check-input:checked {
+		background-color: $color-tertiary;
+	}
+
+	.btn {
+		@include for-small-screen() {
+			padding: 11px 14px;
+		}
 	}
 }
-.carousel-control-next-icon {
-	&::before {
-		content: '\f054';
-		font: var(--fa-font-solid);
-		@include absolute-center();
-		font-size: 24px;
-		color: $color-black;
-		position: absolute;
-	}
-}
+
